@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TPI TAREA</title>
+
+	<link rel="stylesheet" href="tabla.css">
+</head>
+<!--hola-->
+<body>
+	<div id="main-container">
+                        LEYDI PRICILA ROMERO PALACIOS RP17032
+		<table>
+			<thead>
+				<tr>
+					<th>etiqueta</th><th>acción</th><th>atributo</th><th>tipo</th><th>ejemplo</th><th>resultado</th>
+				</tr>
+			</thead>
+
+			<tr>
+                <td>1) &lta&gt &lt/a&gt </td><td>Hipervínculo.</td><td>href, name, rel, rev, tittle</td>
+                <td>HTML</td><td>&lta href="url">google&lt/a></td><td><a href="#">google</a> </td>
+            </tr>
+            <tr>
+                    <td>2) &ltabbr&gt&lt/abbr&gt </td><td>Define una abreviación</td><td>title,id,style,class etc.</td>
+                    <td>HTML5</td><td>&ltABBR title="Firmado">Fdo.&lt/ABBR></td>
+                    <td><ABBR title="Firmado">Fdo.<br>(pasa el puntero sobre la palabra abreviada)</ABBR></td>
+			</tr>
+			<tr>
+                    <td> 3)&ltaddress&gt&lt/address&gt</td><td>Formato para dirección<br>del autor.
+                    </td><td>Ninguno</td><td>HTML</td><td>&ltaddress>Este libro corresponde<br>
+                    a miguel felix&lt/address></td>
+                    <td><address>Este libro corresponde<br>a miguel felix</address></td>
+			</tr>
+			<tr>
+                    <td>4) &ltarticle&gt &lt/article&gt </td><td>define un articulo.</td><td>atributos globales</td>
+                    <td>HTML5</td><td>&ltarticle><br>
+                            cuerpo del articulo
+                            &lt/article></td><td><article>
+		           <header>
+			      <h1>Noticia </h1>
+			          <p>Esto es una noticia</p>
+		         </header>
+		        <footer>
+    		    <p>25/10/2019</p>
+  		           </footer>
+               	</article> </td>
+			</tr>
+			<tr>
+                    <td>5) &ltaudio> &lt/audio> </td><td>Define el contenido de sonido.</td><td>src,preload,mediagroup,autoplay,<br>loop,muted,controls</td>
+                    <td>HTML5</td><td>&ltaudio src="TPI\music.mp3"<br>
+                         preload="none" controls>&lt/audio></td>
+                    <td><audio src="music.mp3" preload="none" controls></audio> </td>
+            </tr>
+            <tr>
+                    <td>6) &ltb&gt &lt/b> </td><td>Define texto en negrita.</td><td>tittle,id,class,style,lang,dir</td>
+                    <td>HTML5</td><td>&ltb>Texto en negrita&lt/b></td><td><b>Texto en negrita</b> </td>
+            </tr>
+            <tr>
+                    <td>7) &ltbdo></td><td>Sobreescribe la dirección del texto.</td>
+                    <td>tittle, id,style,class, lang,dir</td><td>HTML5</td><td>&ltbdo dir="rtl">uno(1) dos(2)&lttd></td>
+                        <td><bdo dir="rtl">uno(1) dos(2)</td>
+            </tr>
+             <tr>
+                    <td>8) &ltbig> &lt/big> </td><td>aumenta el tamaño.</td><td>tittle,id,class,style</td>
+                    <td>HTML</td><td>Texto normal y... <br>&ltbig>Texto más grande&lt/big></td><td>Texto normal y... <big>Texto más grande</big></td>
+            </tr>
+            <tr>
+                        <td>9) &ltbr> &lt/br> </td><td>Retorno de línea.</td><td>CLEAR: Se utiliza en combinación <br>con ALIGN de IMAGE.</td>
+                        <td>HTML</td><td>hola&ltbr>aqui hay un slato de linea</td><td>hola<br>aqui hay un salto de linea</td>
+            </tr>
+            <tr>
+                        <td>10) &ltbutton> &lt/buton> </td><td>Define un botón clickeable.</td><td>id,class, lang,name<br>style,accesskey,value,dir,tittle</td>
+                        <td>HTML5</td><td>&ltbutton name="button">Click aqui&lt/button></td><td><button name="button">Click aqui</button></td>
+            </tr>
+            <tr>
+                            <td>11) &ltcaption> &lt/caption> </td><td>Es el encargado de darle un título descriptivo a las tablas</td><td>titlle, id, class, aling,<br> width,left, right, center</td>
+                        <td>HTML</td><td>&lttable border='1'>&ltcaption>Tabla con caption&lt/caption>
+                                &lttr> &lttd> tabla de una celda. &lt/td> 
+                                &lt/table></td><td><table border='1'><caption>Tabla con caption</caption>
+                                 <tr> <td> tabla de una celda. </td>  </tr>
+                               </table></td>
+                
+            </tr>
+            <tr>
+                                <td>12) &ltcenter> &lt/center> </td><td>Centrar.</td><td>style,id,lang, tittle</td>
+                                <td>HTML</td><td>&ltcenter>hola como estas<br> por ahi&lt/center></td><td><center>hola como estas<br> por ahi</center></td>
+            </tr>
+            <tr>
+                    <td>13) &ltcite> &lt/cite> </td><td>Formato para citas en itálicas.</td><td>style,id,lang, tittle</td>
+                    <td>HTML</td><td>&ltcite>Galileo&lt/cite> dijo: "... y sin embargo, se mueve."</td><td><cite>Galileo</cite> dijo: "... y sin embargo, se mueve."</td>
+            </tr>
+            <tr>
+                    <td>14) &ltcode> &lt/code> </td><td>para marcar el código de un programa..</td><td>style,id,lang, tittle</td>
+                    <td>HTML</td><td>&ltcode>
+                        #include main() { for(;;) { printf ("Hello World!\n"); } } 
+                        &lt/code></td><td><code>
+                            #include main() { for(;;) { printf ("Hello World!\n"); } } 
+                           </code></td>
+            </tr>
+            <tr>
+                    <td>15) &ltdata> &lt/data> </td><td>vincula un contenido dado con<br> una traducción legible por una máquina..</td><td>value,atributos globales</td>
+                    <td>HTML</td><td>&ltdata value="3967381400">Mega Jumbo Ketchup&lt/data></td><td><data value="3967381400">Mega Jumbo Ketchup</data></td>
+            </tr>
+            <tr>
+                    <td>16) &ltdel> &lt/del> </td><td>marca las partes de un texto o documento que han sido suprimidas o sustituidas...</td><td>tittle,style,class,id,<br>lang,cite,datatime</td>
+                    <td>HTML</td><td>El agua es insípida &ltdel>y húmeda.&lt/del>inodora e incolora</td><td>El agua es insípida <del>y húmeda.</del> inodora e incolora</td>
+            </tr>
+            <tr>
+                    <td>17) &ltdfn> &lt/dfn> </td><td>Formato en italica.</td><td>atributos globales</td>
+                    <td>HTML</td><td>El &ltdfn id="muro-de-berlin">muro de Berlin&lt/dfn> fue parte de la frontera</td><td>El <dfn id="muro-de-berlin">muro de Berlin</dfn> fue parte de la frontera </td>
+            </tr>
+            <tr>
+                    <td>18) &ltdiv> &lt/div> </td><td>Sirve para crear secciones o agrupar contenidos.</td><td>tittle,id,style,class,lang,<br>dir,dstasrc,datafld,aling</td>
+                    <td>HTML5</td><td>&ltdiv style="color: blue;">&lth2> Ejemplo de div  &lt/h2>
+                            &ltp>Esto es un párrafo dentro de un div&lt/p>
+                            &lt/div></td><td>
+                            <div style="color: blue;"><h2> Ejemplo de div  </h2>
+                                     <p>Esto es un párrafo dentro de un div</p>
+                                   </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td>19) &ltem> &lt/em> </td><td>marcar con énfasis las partes importantes de un texto..</td><td>atributos globales</td>
+                    <td>HTML</td><td>&ltem>El dinero&lt/em> es importante pero la salud lo es más</td><td><em>El dinero</em> es importante pero la salud lo es más</td>
+            </tr>
+            <tr>
+                    <td>20) &ltembed> </td><td>provee los medios para insertar acplicaciones externasas</td><td>href, name, rel, rev, tittle</td>
+                    <td>HTML</td><td>&ltembed src="../../../audio" type="audio/mid" autostart="false"></td><td><embed src="../../../audio" type="audio/mid" autostart="false"></td>
+            </tr>
+            <tr>
+                <td>21) &ltfieldset> &lt/fieldset> </td><td>Grupo de elementos relacionados en un formulario</td><td>name, disabled,tittle,style,id,class</td>
+                <td>HTML5</td><td>&ltfieldset>
+                        Nombre: &ltinput name='nombre' type='text' tabindex='1'>
+                        &lt/fieldset></td></td><td><fieldset>
+                        Nombre: <input name='nombre' type='text' tabindex='1'>
+                       </fieldset></td>
+        </tr>
+        <tr>
+                <td>22) &ltfigcaption> &lt/figcaption> </td><td>Define el título para una figura</td><td>atributos globales</td>
+                <td>HTML5</td><td>&ltimg src="#s">&ltfigcaption>un elefante&lt/figcaption>
+                </td><td><img src="#s"><figcaption>un elefante</figcaption>
+                    </td>
+        </tr>
+        <tr>
+                <td>23) &ltfont> &lt/font> </td><td>Definición de la fuente.</td><td>SIZE, COLOR, atributos globales,tittle,id,style</td>
+                <td>HTML</td><td>&ltfont size="5" color="#0000ff"> Hola mundo. &lt/font></td><td><font size="5" color="#0000ff"> Hola mundo. </font></td>
+        </tr>
+        <tr>
+                <td>24) &lth1> &lt/h1> </td><td>Tamaño de encabezado nivel 1</td><td>left,center,right,atributos globales</td>
+                <td>HTML</td><td>&lth1>Encabezado nivel 1&lt/h1></td><td><h1>Encabezado nivel 1</h1></td>
+        </tr>
+        <tr>
+                <td>25) &lth2> &lt/h2> </td><td>Tamaño de encabezado nivel 2</td><td>left,center,right,atributos globales</td>
+                <td>HTML</td><td>&lth2>Encabezado nivel 2&lt/h2></td><td><h2>Encabezado nivel 2</h2></td>
+        </tr>
+        <tr>
+                <td>26) &lth3> &lt/h3> </td><td>Tamaño de encabezado nivel 3</td><td>left,center,right,atributos globales</td>
+                <td>HTML</td><td>&lth3>Encabezado nivel 3&lt/h3></td><td><h3>Encabezado nivel 3</h3></td>
+        </tr>
+        <tr>
+                <td>27) &lth4> &lt/h4> </td><td>Tamaño de encabezado nivel 4</td><td>left,center,right,atributos globales</td>
+                <td>HTML</td><td>&lth4>Encabezado nivel 4&lt/h4></td><td><h4>Encabezado nivel 4</h4></td>
+        </tr>
+        <tr>
+                <td>28) &lth5> &lt/h5> </td><td>Tamaño de encabezado nivel 5</td><td>left,center,right,atributos globales</td>
+                <td>HTML</td><td>&lth5>Encabezado nivel 5&lt/h5></td><td><h5>Encabezado nivel 5</h5></td>
+        </tr>
+        <tr>
+                <td>29) &lth6> &lt/h6> </td><td>Tamaño de encabezado nivel 1</td><td>left,center,right,atributos globales</td>
+                <td>HTML</td><td>&lth6>Encabezado nivel 1&lt/h6></td><td><h6>Encabezado nivel 6</h6></td>
+        </tr>
+        <tr>
+                <td>30) &lti> &lt/i> </td><td>Italica cursiva</td><td>titlle, style, id, class, dir,lang</td>
+                <td>HTML</td><td>  Texto normal y... &lti>Texto 'inclinado'&lt/i></td><td>  Texto normal y... <i>Texto 'inclinado'</i></td>
+        </tr>
+        <tr>
+                <td>31) &ltimg> </td><td>Cargar imágenes.</td><td>ALIGN, SRC, ALT, ISMAP, WIDTH, HEIGHT, VSPACE, HSPACE</td>
+                <td>HTML</td><td>&ltimg src="marip.jpg" alt="Mariposa" width="100" height="100" ></td><td><img src="marip.jpg" alt="Mariposa" width="100" height="100" ></td>
+        </tr>
+        <tr>
+                <td>32) &ltinput></td><td>Define un objeto de ingreso en un formulario.</td><td>type, name, value,size, aling src</td>
+                <td>HTML5</td><td> &ltinput type="email"></td><td><input type="email"></td>
+        </tr>
+        <tr>
+                <td>33) &ltins> &lt/ins></td><td>marca las partes de un texto que han sido añadidos al documento.</td><td>tittle,style,id, class,dir,lang,cite,datatime</td>
+                <td>HTML</td><td>El agua es insipida, &ltins>inodora e incolora.&lt/ins></td><td>El agua es insipida, <ins>inodora e incolora.</ins></td>
+        </tr>
+        <tr>
+                <td>34) &ltkbd>&lt/kbd></td><td>Formato monoespaciado.</td><td>tittle, style, id, class, lang, dir</td>
+                <td>HTML</td><td>Si está conforme escriba &ltkbd>sí&lt/kbd></td><td>Si está conforme escriba <kbd>sí</kbd></td>
+        </tr>
+        <tr>
+                <td>35) &ltlabel> &lt/label></td><td>Define el rótulo para un elemento &ltinput></td><td>accesskey,for,form y atributos globales</td>
+                <td>HTML</td><td>&ltlabel for="Name">Click aqui&lt/label></td><td><label for="Name">Click aqui</label>
+                        <input type="text" id="Name" name="Name" /></td>
+        </tr>
+        <tr>
+                <td>36)&ltli> &lt/li></td><td>Define un ítem de una lista</td><td>type, name, value,size, aling,value</td>
+                <td>HTML</td><td>&ltli>punto uno&lt/li>&ltli>punto dos&lt/li></td><td><li>punto uno</li><li>punto dos</li></td>
+        </tr>
+        <tr>
+                <td>37) &ltmark>&lt/mark></td><td>texto marcado o resaltado como referencia</td><td>atributos globales</td>
+                <td>HTML</td><td>las &ltmark>salamandras&lt/mark> son animales nocturnos</td><td>las <mark>salamandras</mark> son animales nocturnos</td>
+        </tr>
+        <tr>
+                <td>38) &ltmarquee>&lt/marque></td><td>se utiliza para insertar un area de texto en movimiento.</td><td>bgcolor,direction,height,hspace,loop</td>
+
+                <td>HTML</td><td>&ltmarquee direction="up">Este texto se mueve de abajo hacia arriba&lt/marquee></td><td><marquee direction="up">Este texto se mueve de abajo hacia arriba</marquee></td>
+        </tr>
+        <tr>
+                <td>39) &ltmeter> &lt/meter></td><td>representar mediante una barra un rango de valores.</td><td>value,max, low, high, optimum</td>
+                <td>HTML</td><td>&ltmeter value="2" min="0" max="10">&lt/meter</td><td><meter value="2" min="0" max="10"></meter></td>
+        </tr>
+        <tr>
+                <td>40) &ltnobr> &lt/nobr></td><td>obliga al navegador a que muestre esa frase sin saltos de línea.</td><td>atributos globales</td>
+                <td>HTML</td><td>&ltnobr>Ésta sería una frase que no se puede partir &lt/nobr></td><td><nobr>Ésta sería una frase que no se puede partir </nobr></td>
+        </tr>
+        <tr>
+                <td>41) &ltol>&lt/ol></td><td> crea una lista ordenada.</td><td>tittle, style, id, class, lang, dir</td>
+                <td>HTML</td><td>&ltol>
+                        &ltli>punto uno&lt/li>&ltli>punto dos&lt/li>&lt/ol></td><td><ol>
+                        <li>punto uno</li><li>punto dos</li></ol></td>
+        </tr>
+        <tr>
+                <td>42) &ltoptgroup>&lt/optgroup></td><td>sirve para agrupar las diferentes opciones (option) que hay en una etiqueta select.</td><td>label, atributos globales</td>
+                <td>HTML5</td><td>&lt/optgroup>
+                        &ltoptgroup label="Lenguajes del lado cliente">
+                        &ltoption>JavaScript&lt/option>
+                        &ltoption>VBScript&lt/option>
+                        &lt/optgroup</td><td></optgroup>
+                        <optgroup label="Lenguajes del lado cliente">
+                        <option>JavaScript</option>
+                        <option>VBScript</option>
+                        </optgroup></td>
+        </tr>
+        <tr>
+                <td>43) &ltoption> &lt/option></td><td>representa una opción en un control select o una sugerencia en un elemento</td><td>value, label, select, disable</td>
+                <td>HTML</td><td>&ltoption>Búho&lt/option> &ltoption>Petirrojo&lt/option>
+                        &ltoption>Paloma &lt/option></td><td> <option>Búho</option><option>Petirrojo</option>
+                  <option>Paloma</option></td>
+        </tr>
+        <tr>
+                <td>44) &ltp>&lt/p></td><td>(párrafo) es el apropiado para distribuir el texto en párrafos.</td><td>tittle, style, id, class, lang, dir</td>
+                <td>HTML</td><td>&ltp>
+                        Esto 
+                        es un 
+                        párrafo
+                        &lt/p></td><td><p>
+                        Esto 
+                        es un 
+                        párrafo
+                        </p></td>
+        </tr>
+        <tr>
+                <td>45) &ltpicture> &lt/picture></td><td>ha sido diseñado para proveer soporte nativo para imágenes adaptativas en HTML5</td><td>atributos globales</td>
+                <td>HTML5</td><td>&ltpicture>
+                        &ltimg class="flr" src="isaac.jpg" alt="Sir Isaac Newton">
+                        &lt/picture></td></td><td>
+                        <picture>
+                        <img class="flr" src="isaac.jpg" alt="Sir Isaac Newton">
+                        </picture></td>
+        </tr>
+        <tr>
+                <td>46) &ltpre>&lt/pre></td><td> los espacios continuos y los quiebres de línea son respetados.</td>
+                <td>width atributos globales</td>
+                <td>HTML</td><td>    &ltpre>Las cosas que necesitarás están listadas aquí:
+
+                                - Una linterna.
+                              
+                                - Una caja de fósforos.
+                
+                                - Un cuchillo afilado.
+                              
+                                &lt/pre></td><td>
+                        <pre>Las cosas que necesitarás están listadas aquí:
+
+                        - Una linterna.
+                      
+                        - Una caja de fósforos.
+        
+                        - Un cuchillo afilado.
+                      
+                      </pre></td>
+        </tr>
+        <tr>
+                <td>47) &ltprogress> &lt/progress></td><td>se utiliza para visualizar el progreso de una tarea</td><td>max, value</td>
+                <td>HTML5</td><td>&ltprogress value="70" max="100">70 %&lt/progress></td><td><progress value="70" max="100">70 %</progress></td>
+        </tr>
+        <tr>
+                        <td>48) &ltq>&lt/q></td><td>permite a los autores insertar citas en forma de líneas cortas de texto,</td><td>cite, atributos globales</td>
+                        <td>HTML5</td><td>&ltq>...de lo contrario tendré que encontrar otra solución!&lt/q></td><td><q>...de lo contrario tendré que encontrar otra solución!</q></td>
+                </tr>
+        <tr>
+                <td>49) &ltrp>&lt/rp></td><td>provee los medios para ocurtar información en anotaciones ruby </td><td>atributos globales</td>
+                <td>HTML5</td><td>&ltruby>Texto base&ltrp> (&lt/rp>&ltrt>Anotación&lt/rt>&ltrp>)&lt/rp>&lt/ruby></td><td><ruby>Texto base<rp> (</rp><rt>Anotación</rt><rp>)</rp></ruby></td>
+        </tr>
+        <tr>
+                <td>50) &lts> &lt/s></td><td>Muestra el texto tachado con una linea horizontal.</td><td>tittle, style, id, class, lang, dir</td>
+                <td>HTML</td><td>Texto normal y... &lts>Texto tachado&lt/s></td><td>Texto normal y... <s>Texto tachado</s></td>
+        </tr>
+        <tr>
+                <td>51) &ltsamp>&lt/samp></td><td>e utiliza para incluir texto en línea que representa una muestra (o cita).</td><td>atributos globales</td>
+                <td>HTML</td><td>&ltsamp> teclado no funciona <br>Presiona f1 para continuar&lt/samp></td><td><samp> teclado no funciona <br>Presiona f1 para continuar/samp></td>
+        </tr>
+        <tr>
+                <td>52) &ltsection> &lt/section></td><td>Define una seccion de la página.</td><td>atributos globales</td>
+                <td>HTML</td><td>&ltsection>
+                                &lth1>Encabezado&lt/h1>
+                                &ltp>Un montón de contenido impresionante.&lt/p>
+                                &lt/section></td><td><section>
+                                <h1>Encabezado</h1>
+                                <p>Un montón de contenido impresionante.</p>
+                              </section></td>
+        </tr>
+        <tr>
+                <td>53) &ltselect>&lt/select></td><td>representa un control que muestra un menú de opciones.</td><td>autofocus,disabled, form, multiple, name</td>
+                <td>HTML</td><td>&ltselect name="select">
+                                &ltoption value="value1">Value 1&lt/option> 
+                                &ltoption value="value2">Value 2&lt/option>
+                                &lt/select></td></td><td><select name="select">
+                                <option value="value1">Value 1</option> 
+                                <option value="value2">Value 2</option>
+                              </select></td>
+        </tr>
+        <tr>
+                <td>54) &ltsmall>&lt/small></td><td>Disminuye el tamaño..</td><td>atributos globales</td>
+                <td>HTML5</td><td>&ltsmall>Hola como te encuentas&lt/small></td><td><small>Hola como te encuentas</small></td>
+        </tr>
+        <tr>
+                <td>55) &ltspan>&lt/span></td><td>. Sirve para aplicar estilo al texto o agrupar elementos en línea..</td><td>tittle, style, id, class, lang, dir, datasrc, datafld</td>
+                <td>HTML</td><td>&ltspan style="color: red;"> y esto un span dentro de un párrafo. &lt/span></td><td><span style="color: red;"> y esto un span dentro de un párrafo. </span></td>
+        </tr>
+        <tr>
+                <td>56) &ltstrong>&lt/strong></td><td>marcar con especial énfasis las partes más importantes de un texto.</td><td>atributos globales</td>
+                <td>HTML</td><td>es importante pero &ltstrong>la salud&lt/strong> lo es más.</td><td>es importante pero <strong>la salud</strong> lo es más.</td>
+        </tr>
+        <tr>
+                <td>57) &ltstyle>&lt/style></td><td>encargado de indicar la información de estilo.</td><td>tittle,media, lang, dir</td>
+                <td>HTML5</td><td>&ltstyle type="text/css">
+                        p { color: red; }
+                        &lt/style>
+                        &ltp> Texto en rojo &lt/p></td></td><td><style type="text/css">
+                        p { color: red; }
+                       </style>
+                       <p> Texto en rojo </p></td>
+        </tr>
+        <tr>
+                <td>58) &ltsub>&lt/sub></td><td>efine un fragmento de texto que se debe mostrar, por razones tipográficas, más bajo, </td><td>atributos generales</td>
+                <td>HTML</td><td>La fórmula química de agua: H&ltsub>2&lt/sub>O</td><td>La fórmula química de agua: H<sub>2</sub>O</td>
+        </tr>
+        <tr>
+                <td>59) &ltsummary>&lt/summary></td><td> representa un resumen, título o etiqueta para los contenidos de un elemento</td><td>atributos globales</td>
+                <td>HTML</td><td>&ltsummary>hola&lt/summary></td><td> <summary>hola</summary></td>
+        </tr>
+        <tr>
+                        <td>60) &ltsup>&lt/sup></td><td> efine un fragmento de texto que se debe mostrar, por razones tipográficas, más alto,</td><td>atributos globales</td>
+                        <td>HTML</td><td>Este texto es &ltsup>superíndice&lt/sup></td><td>Este texto es <sup>superíndice</sup></td>
+                </tr>
+                <tr>
+                                <td>61) &lttextarea>&lt/texttarea></td><td>representa un control para edición muti-línea de texto plano.</td><td>atributos globales, NAME, ROWS, COLS.</td>
+                                <td>HTML</td><td> &lttextarea name="textarea" rows="10" cols="40">escriba algo aqui&lt/textarea></td><td>
+                                                <textarea name="textarea" rows="10" cols="40">escriba algo aqui</textarea>
+                                        </td>
+        </tr>
+        <tr>
+                <td>62) &lttfoot>&lt/tfoot></td><td> contiene a un bloque de filas (tr) que representa a la sección de pie de una tabla (table)</td><td>aling, char, charoff, valing</td>
+                <td>HTML5</td><td> &lttable>
+                                &lttfoot>
+        
+                                &lttr>
+                                    
+                                &ltth>Total&lt/th>
+                                    
+                                &ltth>$7,750.00&lt/th>
+                                    
+                                &lt/tr>
+                                    
+                                &lt/tfoot> &lt/table></td><td>
+                        <table>
+                        <tfoot>
+
+                                <tr>
+                            
+                                  <th>Total</th>
+                            
+                                  <th>$7,750.00</th>
+                            
+                                </tr>
+                            
+                              </tfoot> </table></td>
+                </tr>
+        <tr>
+                <td>63) &ltthead>&lt/thead></td><td>Contiene una fila de celdas de encabezado</td><td>aling, char, charoff, valing</td>
+                <td>HTML5</td><td>&lttable class="egt">
+
+                                &ltthead>
+                              
+                                &lttr>
+                              
+                                &ltth>Libro&lt/th>
+                              
+                                &ltth>Autor&lt/th>
+                              
+                                &ltth>Publicado&lt/th>
+                              
+                                &lt/tr>
+                              
+                                &lt/thead>
+                              
+                                &lt/table></td><td><table class="egt">
+
+                                <thead>
+                              
+                                  <tr>
+                              
+                                    <th>Libro</th>
+                              
+                                    <th>Autor</th>
+                              
+                                    <th>Publicado</th>
+                              
+                                  </tr>
+                              
+                                </thead>
+                              
+                        </table></td>
+        </tr>    
+         <tr>
+                <td>64) &lttime>&lt/time></td><td>Indica una hora o fecha.</td><td>atributos globales,datatime</td>
+                <td>HTML5</td><td>&lttime datetime="2015-12-31 23:59">Noche vieja es el día 31&lt/time></td><td><time datetime="2015-12-31 23:59">Noche vieja es el día 31</time></td>
+        </tr>
+        <tr>
+         <td>65) &lttt>&lt/tt></td><td>Muestra el texto marcado con una fuente de ancho fijo.</td><td>atributos globales</td>
+                <td>HTML</td><td>Texto normal y... &lttt>Texto con formato teletipo&lt/tt></td><td>Texto normal y... <tt>Texto con formato teletipo</tt></td>
+        </tr>     
+        <tr>
+         <td>66) &ltu>&lt/u></td><td> muestra el texto subrayado</td><td>atributos globales</td>
+        <td>HTML</td><td> Texto normal y... &ltu>Texto subrayado&lt/u></td><td> Texto normal y... <u>Texto subrayado</u></td>
+        </tr>  
+        <tr>
+         <td>67) &ltul>&lt/ul></td><td>  crea una lista no ordenada.</td><td>tittle,id,lang,estyle</td>
+         <td>HTML</td><td>&ltul>
+                        &ltli>Esto&lt/li>
+                        &ltli>Lo otro&lt/li>
+                        &ltli>Lo de más allá&lt/li>
+                        &lt/ul></td><td><ul>
+                        <li>Esto</li>
+                        <li>Lo otro</li>
+                        <li>Lo de más allá</li>
+                       </ul></td>
+        </tr>
+        <tr>
+         <td>68) &ltvar>&lt/var></td><td>Marca variables de programas y similares.</td><td>tittle,style</td>
+         <td>HTML</td><td>el bucle no se detendrá hasta que &ltvar>Faltan&lt/var> sea igual a 0.</td><td>el bucle no se detendrá hasta que <var>Faltan</var> sea igual a 0.</td>
+        </tr>
+        <tr>
+         <td>69) &ltvideo>&lt/video></td><td>muestra videos</td><td>preload, none. metadata,</td>
+         <td>HTML</td><td>&ltvideo src="#" controls>
+                        Tu navegador no implementa el elemento.
+                        &lt/video></td><td><video src="#" controls>
+                Tu navegador no implementa el elemento.
+              </video></td>
+        </tr> 
+        <tr>
+         <td>70) &ltxmp>&lt/xmp></td><td> ibuja texto entre las etiquetas de inicio y fin sin interpretar el HTML que se encuentra en medio</td><td>atributos globales</td>
+         <td>HTML</td><td>&ltxmp>&ltp>parrafo&lt/p>&lt/xmp></td><td><xmp><p>parrafo</p></xmp></td>
+        </tr>         
+		</table>
+	</div>
+</body>
+</html>
